@@ -43,7 +43,7 @@ def pad_audio(audio_file, target_duration=6):
     return audio
 
 # Directory containing raw WAV files
-input_dir = '/home/ubuntu/hiruni/noise_identification/data/train/Trumpet'
+input_dir = 'data/train/Trumpet'
 
 # Function to save audio files with sequential names like Rumble01.wav, Rumble02.wav, etc.
 def save_audio(audio, sr, output_dir, file_numbers, prefix='Trumpet'):
