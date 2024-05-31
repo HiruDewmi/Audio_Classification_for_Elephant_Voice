@@ -43,7 +43,7 @@ To ensure a consistent environment for running the script, we have included an e
 2. **Create the Environment:**
    ```bash
    conda env create -f environment.yml
-```
+   ```
 ## Usage Guide
 
 The following steps describe how to process the raw audio files to ensure they meet the requirements of the machine learning models. The script segments, pads, or trims the audio files as necessary to produce 6-second audio files suitable for training.
@@ -68,4 +68,4 @@ python process_audio.py data/raw_audio data/processed_audio
 ```
 
 This command processes each audio file in `data/raw_audio`, applies the necessary padding, segmentation, or trimming, and saves the processed files in `data/processed_audio` with appropriate naming.
-```
+
