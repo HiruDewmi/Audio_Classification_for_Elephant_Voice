@@ -30,7 +30,7 @@ def pad_audio(audio_file, target_duration=6):
     return audio_padded
 
 # Directory containing raw WAV files
-input_dir = '/home/ubuntu/hiruni/noise_identification/data/train/Trumpet'
+input_dir = 'data/train/Trumpet'     
 
 def save_audio(audio, sr, output_dir, file_numbers, prefix='Trumpet'):
     file_number = file_numbers.pop(0)
