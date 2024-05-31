@@ -21,7 +21,7 @@ def print_audio_lengths_in_directory(directory):
         print("  No audio directory found.")
 
 def main():
-    root_directory = '/home/ubuntu/hiruni/noise_identification/data/train/'
+    root_directory = 'data/train/'
     for dirpath, _, _ in os.walk(root_directory):
         print_audio_lengths_in_directory(dirpath)
 
