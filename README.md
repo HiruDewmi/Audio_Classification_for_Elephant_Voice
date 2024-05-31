@@ -21,3 +21,10 @@ We experimented with the following models:
 
 3. **RawNet:**
    - Trained the model from scratch for our datasets.
+
+4. **ElephantCallerNet based from ACDNet:**
+   - Trained the model from scratch for our datasets.
+  
+## Pre-processing
+The models are trained on raw audio files. However, the audio files need to be pre-processed before training. Here are the steps for pre-processing:
+1.   **
