@@ -30,7 +30,7 @@ def pad_audio(audio_file, target_duration=6):
     return audio
 
 # Directory containing raw WAV files
-input_dir = '/home/ubuntu/hiruni/noise_identification/data/train/Trumpet'
+input_dir = 'data/train/Trumpet'
 
 # Loop through all WAV files in the directory
 for file_name in os.listdir(input_dir):
