@@ -46,7 +46,7 @@ def split_and_repeat_audio(audio, target_duration=6, sr=44100):
     return audio1, audio2
 
 # Path to the audio file
-input_audio_file = '/home/ubuntu/hiruni/noise_identification/data/validate/Roar/padded_Roar-Rumble -207.wav_1.wav'
+input_audio_file = 'data/validate/Roar/padded_Roar-Rumble -207.wav_1.wav'
 
 # Load audio file
 audio, sr = librosa.load(input_audio_file, sr=None)
@@ -60,14 +60,14 @@ if duration >= 6:
     audio1, audio2 = split_and_repeat_audio(audio, sr=sr)
     
     # Save audio segments as separate files
-    output_file1 = '/home/ubuntu/hiruni/noise_identification/data/validate/Roar/padded_audio_1.wav'
+    output_file1 = 'data/validate/Roar/padded_audio_1.wav'
     write(output_file1, sr, audio1)
     
-    output_file2 = '/home/ubuntu/hiruni/noise_identification/data/validate/Roar/padded_audio_2.wav'
+    output_file2 = 'data/validate/Roar/padded_audio_2.wav'
     write(output_file2, sr, audio2)
 
 # If duration is between 3 and 6 seconds, pad the audio if necessary
 elif 3 < duration <6:
     padded_audio = pad_audio(audio, sr=sr)
-    output_file = '/home/ubuntu/hiruni/noise_identification/data/validate/Roar/padded_audio.wav'
+    output_file = 'data/validate/Roar/padded_audio.wav'
     write(output_file, sr, padded_audio)
