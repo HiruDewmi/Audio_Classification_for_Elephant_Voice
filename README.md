@@ -64,7 +64,7 @@ The following steps describe how to process the raw audio files to ensure they m
 
 Suppose you have a directory of raw audio files located at `data/raw_audio` and you want to save the processed audio files in `data/processed_audio`. You would run the script as follows:
 ```bash
-python inference.py data/raw_audio data/processed_audio
+python process_audio.py data/raw_audio data/processed_audio
 ```
 
 This command processes each audio file in `data/raw_audio`, applies the necessary padding, segmentation, or trimming, and saves the processed files in `data/processed_audio` with appropriate naming.
@@ -72,6 +72,6 @@ This command processes each audio file in `data/raw_audio`, applies the necessar
 ## Inference
 After you have created or pre-processed your audio files, you can directly pass your audio file to inference code as follows;
 ```bash
-python your_script.py mobilenet /path/to/your/audio/file.wav
+python inference.py mobilenet /path/to/your/audio/file.wav
 ```
 Replace 'mobilnet' with your preference model. This project is supporting 04 models, namely; Mobilnet, YAMNet, RawNet, and ACDNet
