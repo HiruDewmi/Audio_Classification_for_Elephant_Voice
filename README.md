@@ -64,7 +64,7 @@ The following steps describe how to process the raw audio files to ensure they m
 
 Suppose you have a directory of raw audio files located at `data/raw_audio` and you want to save the processed audio files in `data/processed_audio`. You would run the script as follows:
 ```bash
-python process_audio.py data/raw_audio data/processed_audio
+python inference.py data/raw_audio data/processed_audio
 ```
 
 This command processes each audio file in `data/raw_audio`, applies the necessary padding, segmentation, or trimming, and saves the processed files in `data/processed_audio` with appropriate naming.
